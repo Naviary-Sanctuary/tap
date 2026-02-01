@@ -2,7 +2,7 @@ class SchemaGen < Formula
   desc "Automatically generate validation schemas from TypeScript class definitions"
   homepage "https://github.com/Naviary-Sanctuary/schema-gen"
   license "MIT"
-  version "v0.1.3"
+  version "0.1.3"
 
   on_macos do
     url "https://github.com/Naviary-Sanctuary/schema-gen/releases/download/v0.1.3/schema-gen-macos-arm64"

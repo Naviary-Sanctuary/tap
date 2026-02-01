@@ -9,6 +9,8 @@ if [ -z "$VERSION" ]; then
   exit 1
 fi
 
+VERSION_NUMBER="${VERSION#v}"
+
 echo "⏳ Calculating SHA256 for version: $VERSION"
 echo ""
 
@@ -26,7 +28,7 @@ echo ""
 echo "Copy this to Formula/schema-gen.rb:"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 cat <<EOF
-  version "$VERSION"
+  version "$VERSION_NUMBER"
 
   on_macos do
     url "https://github.com/Naviary-Sanctuary/schema-gen/releases/download/$VERSION/schema-gen-macos-arm64"
